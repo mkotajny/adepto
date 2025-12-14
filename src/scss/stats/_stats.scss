@@ -1,0 +1,29 @@
+.zirox {
+    &-stats {
+        margin-bottom: -150px;
+        
+        .container {
+            background-color: $home-3-primary-color;
+            padding: 80px 0;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            @media #{$small_mobile} {
+                padding-bottom: 0;
+            }
+        }
+        &__vectors {
+            img {
+                position: absolute;
+            }
+            &-left {
+                top: -124px;
+                left: -104px;
+            }
+            &-right {
+                bottom: -124px;
+                right: -104px;
+            }
+        }
+    }
+}

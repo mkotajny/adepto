@@ -1,0 +1,514 @@
+/**
+===========================
+Template: Zirox - Creative Digital Agency HTML Template
+File: Default Styles
+Author: ultraDevs
+Author URI: https://themeforest.net/user/ultradevs
+Description: Zirox - Creative Digital Agency HTML Template
+Version: 1.0.0
+===========================
+
+Note: This file contains the styles for the full template. You can edit the styles of the template from here.
+
+Default Styles
+
+Table of Contents
+01/ Variables
+02/ Mixins
+03/ Fonts
+04/ Common
+05/ Header
+06/ Side Bar
+07/ Main Content
+
+====================================
+**/
+/*------------------------------------
+	01/ Variables
+------------------------------------*/
+/*------------------
+Responsive Media Query Variables
+------------------*/
+/*------------------
+Colors
+------------------*/
+/*------------------------------------
+	02/ Mixins
+------------------------------------*/
+/*------------------------------------
+	03/ Fonts
+------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/*------------------------------------
+	04/ Common
+------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 85px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #DA242B;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.container-fluid {
+  width: 95%;
+}
+@media (max-width: 767px) {
+  .container-fluid {
+    width: 100%;
+  }
+}
+
+.zirox-hamburger-menu {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.zirox-hamburger-menu .zirox-hamburger-menu__btn--active span {
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+}
+.zirox-hamburger-menu .zirox-hamburger-menu__btn--active span::before {
+  top: 0;
+  -ms-transform: rotate(0);
+      transform: rotate(0);
+}
+.zirox-hamburger-menu .zirox-hamburger-menu__btn--active span::after {
+  top: 0;
+  -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+}
+.zirox-hamburger-menu__btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  cursor: pointer;
+}
+.zirox-hamburger-menu__btn span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #DA242B;
+  transition: all 0.3s ease-in-out;
+}
+.zirox-hamburger-menu__btn span::before, .zirox-hamburger-menu__btn span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #DA242B;
+  transition: all 0.3s ease-in-out;
+}
+.zirox-hamburger-menu__btn span::before {
+  top: -8px;
+}
+.zirox-hamburger-menu__btn span::after {
+  top: 8px;
+}
+
+/*------------------------------------
+	05/ Header
+------------------------------------*/
+.zirox-doc-header {
+  padding: 20px 0;
+  background-color: #FAF7F7;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.zirox-doc-header-nav-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.zirox-doc-header-nav-bar-logo img {
+  width: 150px;
+  height: auto;
+}
+.zirox-doc-header-nav-bar-socials {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 20px;
+}
+.zirox-doc-header-nav-bar-socials li a {
+  transition: all 0.4s ease-in-out;
+}
+.zirox-doc-header-nav-bar-socials li a i {
+  font-size: 22px;
+  color: #000;
+  transition: all 0.4s ease-in-out;
+}
+.zirox-doc-header-nav-bar-socials li a:hover i {
+  color: #DA242B;
+}
+.zirox-doc-header-nav-bar-search {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 20px;
+}
+.zirox-doc-header-nav-bar-search-input input {
+  outline: none;
+  padding: 10px 20px;
+  border: 2px solid #f7f7f7;
+}
+.zirox-doc-header-nav-bar-search a {
+  padding: 10px 24px;
+  color: #fff;
+  background-color: #DA242B;
+  border: 2px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+.zirox-doc-header-nav-bar-search a:hover {
+  border-color: #DA242B;
+  background: transparent;
+  color: #DA242B;
+}
+.zirox-doc-header-nav-bar-search .mobile-menu button {
+  border: none;
+}
+.zirox-doc-header-nav-bar-search .mobile-menu button i {
+  font-size: 28px;
+  color: #DA242B;
+}
+
+/*------------------------------------
+	06/ Side Bar
+------------------------------------*/
+.zirox-doc-sidebar {
+  background: #fff;
+  transition: all 0.4s ease-in-out;
+  position: sticky;
+  top: 114px;
+  bottom: 0;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 38px;
+}
+@media (max-width: 1199px) {
+  .zirox-doc-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    z-index: 1;
+    -ms-transform: translateX(-300px);
+        transform: translateX(-300px);
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 767px) {
+  .zirox-doc-sidebar {
+    width: 280px;
+    -ms-transform: translateX(-280px);
+        transform: translateX(-280px);
+  }
+}
+.zirox-doc-sidebar--open {
+  -ms-transform: translateX(0px);
+      transform: translateX(0px);
+}
+.zirox-doc-sidebar h3 {
+  background: #DA242B;
+  color: #fff;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+}
+.zirox-doc-sidebar .nav a {
+  color: #000;
+}
+.zirox-doc-sidebar .nav-pills .nav-link {
+  border-radius: 0px;
+}
+.zirox-doc-sidebar .main-link {
+  font-weight: 600;
+}
+.zirox-doc-sidebar .nav-pills .nav-link.active {
+  background-color: transparent;
+  color: #DA242B;
+}
+
+/*------------------------------------
+	07/ Main Content
+------------------------------------*/
+.zirox-doc-main-content {
+  padding-left: 40px;
+}
+@media (max-width: 1281px) {
+  .zirox-doc-main-content {
+    padding-left: 0;
+  }
+}
+.zirox-doc-main-content-info {
+  box-shadow: 0 3px 6px 0 rgba(4, 73, 89, 0.02);
+  border: 1px solid #e5ebef;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+.zirox-doc-main-content-info-list {
+  position: relative;
+  list-style: none;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+.zirox-doc-main-content-info-list::before {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #c4cdd5;
+}
+.zirox-doc-main-content-info-list li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 16px 0;
+  position: relative;
+  padding-left: 35px;
+  counter-increment: a;
+}
+.zirox-doc-main-content-info-list li::before {
+  content: counter(a);
+  position: absolute;
+  color: #fff;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #DA242B;
+  text-align: center;
+  line-height: 23px;
+  top: -4px;
+  left: -4px;
+  border: 5px solid #fff;
+}
+.zirox-doc-main-content figure {
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  border: 1px solid #e5ebef;
+  margin-bottom: 35px;
+}
+.zirox-doc-main-content figure img {
+  width: 100%;
+  height: auto;
+}
+.zirox-doc-main-content-introduction h2 {
+  font-weight: 600;
+  margin-bottom: 13px;
+  font-size: 34px;
+}
+.zirox-doc-main-content-introduction-title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 22px;
+}
+.zirox-doc-main-content-introduction-top-support {
+  font-size: 16px;
+}
+.zirox-doc-main-content-introduction-top-support a {
+  color: #DA242B;
+}
+.zirox-doc-main-content-requirements h3 {
+  font-weight: 600;
+  margin: 22px 0 15px 0;
+}
+.zirox-doc-main-content-requirements h4 {
+  font-weight: 600;
+  margin-top: 5px;
+}
+.zirox-doc-main-content-what-included p {
+  margin-top: 13px;
+}
+.zirox-doc-main-content-template h2, .zirox-doc-main-content-change-content h2 {
+  margin: 65px 0 18px 0;
+  font-size: 34px;
+}
+.zirox-doc-main-content-template ul, .zirox-doc-main-content-change-content ul {
+  margin: 10px 0 20px 0;
+}
+.zirox-doc-main-content-template ul li a, .zirox-doc-main-content-change-content ul li a {
+  color: #000;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 10px;
+}
+.zirox-doc-main-content-template h3, .zirox-doc-main-content-change-content h3 {
+  margin-bottom: 14px;
+}
+.zirox-doc-main-content-template h5, .zirox-doc-main-content-change-content h5 {
+  color: #DA242B;
+  font-weight: 500;
+}
+.zirox-doc-main-content-template .alert, .zirox-doc-main-content-change-content .alert {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.zirox-doc-main-content-template .alert i, .zirox-doc-main-content-change-content .alert i {
+  color: #DA242B;
+  padding-top: 5px;
+}
+.zirox-doc-main-content-template #change_color strong, .zirox-doc-main-content-change-content #change_color strong {
+  color: #DA242B;
+}
+.zirox-doc-main-content-source h3 {
+  margin-top: 60px;
+}
+.zirox-doc-main-content-source ul {
+  list-style: none;
+  box-shadow: 0 3px 6px 0 rgba(4, 73, 89, 0.02);
+  border: 1px solid #e5ebef;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+.zirox-doc-main-content-source ul li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  position: relative;
+  padding-left: 20px;
+}
+.zirox-doc-main-content-source ul li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2974FF;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.zirox-doc-main-content-support {
+  margin-bottom: 50px;
+}
+.zirox-doc-main-content-support h3 {
+  margin: 60px 0 14px 0;
+}
+.zirox-doc-main-content-support a {
+  color: #DA242B;
+}
+@media (max-width: 767px) {
+  .zirox-doc-main-content h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .zirox-doc-main-content h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .zirox-doc-main-content h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .zirox-doc-main-content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .zirox-doc-main-content ul li, .zirox-doc-main-content ol li {
+    font-size: 14px;
+  }
+}
+.zirox-doc-main-content ol {
+  margin-top: 10px;
+}

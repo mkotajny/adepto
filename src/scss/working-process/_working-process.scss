@@ -1,0 +1,50 @@
+.zirox {
+    &-working-process {
+        background-image: url('../img/working-process/working-process-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        h2 {
+            max-width: 600px;
+            @media #{$small_mobile} {
+                font-size: 38px;
+            }
+        }
+        &-box {
+            border: 2px solid rgba(135, 140, 143, 0.170);
+            padding: 30px;
+			transition: all 0.4s ease-in-out;
+			h3 {
+				transition: all 0.4s ease-in-out;
+			}
+			&:hover {
+				border: 2px solid $primary-color;
+				h3 {
+					color: $primary-color !important;
+				}
+			}
+            &__img {
+                width: 80px;
+                height: 80px;
+                background-color: $primary-color;
+                margin-bottom: 24px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                i {
+                    font-size: 40px;
+                    color: #fff;
+                }
+            }
+            @media #{$tab_device} {
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+            @media #{$small_mobile} {
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

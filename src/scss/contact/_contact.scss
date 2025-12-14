@@ -1,0 +1,157 @@
+.zirox {
+    &-contact {
+        background-color: #1c1b1f;
+        padding-top: 437px;
+        margin-top: -437px;
+        padding-bottom: 0;
+        @media #{$tab_device} {
+            margin-top: 0;
+            padding-top: 70px;
+        }
+        @media #{$small_mobile} {
+            margin-top: 0;
+            padding-top: 50px;
+        }
+        &__left {
+            padding-bottom: 30px;
+            h6,h2 {
+                @media #{$small_mobile} {
+                    text-align: center;
+                }
+            }
+            &__form {
+                input {
+                    width: 100%;
+                    margin-bottom: 40px;
+                    outline: none;
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid #878c8f;
+                    padding-bottom: 15px;
+                    color: #878C8F;
+                    &::placeholder {
+                        color: #878C8F;
+                    }
+                }
+				input[type="date"] {
+					&::-webkit-calendar-picker-indicator {
+						filter: invert(1);
+					}
+				}
+                button {
+                    margin-top: -5px;
+                }
+            }
+        }
+        &__right {
+            img {
+                width: 100%;
+                height: auto;
+                margin-top: -100px;
+                @media #{$small_mobile} {
+                    margin-top: 0;
+                }
+            }
+        }
+        &--single {
+            background-color: #fff;
+            margin-top: 0;
+            padding: 120px 0;
+            @media #{$tab_device} {
+                padding: 70px 0;
+            }
+            @media #{$small_mobile} {
+                padding: 50px 0;
+            }
+            h2 {
+                @media #{$small_mobile} {
+                    text-align: center;
+                }
+            }
+            .zirox-contact__map {
+                padding-bottom: 120px;
+                @media #{$tab_device} {
+                    padding-bottom: 70px;
+                }
+                @media #{$small_mobile} {
+                    padding-bottom: 50px;
+                }
+
+                iframe {
+					width: 100%;
+				}
+
+            }
+            .zirox-contact__left {
+                @media #{$desktop} {
+                    padding-right: 96px;
+                }
+                &-box {
+                    display: flex;
+                    align-items: start;
+                    gap: 35px;
+                    margin-bottom: 50px;
+                    @media #{$small_mobile} {
+                        gap: 20px;
+                        margin-bottom: 30px;
+                    }
+                    &-img {
+                        i {
+                            font-size: 50px;
+                            color: $primary-color;
+                            @media #{$small_mobile} {
+                                font-size: 40px;
+                            }
+                        }
+                    }
+                    &-detail {
+                        h3 {
+                            font-size: 28px;
+                            font-weight: 600;
+                            margin-bottom: 16px;
+                            @media #{$small_mobile} {
+                                margin-bottom: 10px;
+                            }
+                        }
+                        a,address {
+                            display: block;
+                            color: #878c8f;
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin-bottom: 10px;
+                        }
+                        address {
+                            margin-bottom: 0;
+                            line-height: 27px;
+                        }
+                    }
+                }
+            }
+            .zirox-contact__right {
+                &-form {
+                    input,textarea {
+                        padding: 18px 16px;
+                        width: 100%;
+                        outline: none;
+                        border: 1px solid #dfe0e5;
+                        border-radius: 18px;
+                        margin-bottom: 20px;
+                        @media #{$small_mobile} {
+                            padding: 16px 14px;
+                            border-radius: 12px;
+                        }
+                        &::placeholder {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #878c8f;
+                        }
+                    }
+                    button {
+                        border-radius: 28px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
