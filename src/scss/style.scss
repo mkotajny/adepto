@@ -1,0 +1,175 @@
+/**
+===========================
+Template: Zirox - Creative Digital Agency HTML Template
+File: Default Styles
+Author: ultraDevs
+Author URI: https://www.templatemonster.com/authors/ultradevs/
+Description: Zirox - Creative Digital Agency HTML Template
+Version: 1.0.0
+===========================
+
+Note: This file contains the styles for the full template. You can edit the styles of the template from here.
+
+Default Styles
+
+Table of Contents
+01/ Variables
+02/ Mixins
+03/ Fonts
+04/ Common
+05/ Keyframes
+06/ Header
+07/ Hero
+08/ About
+09/ Services
+10/ Projects
+11/ Working Process
+12/ Team
+13/ Choose Us
+14/ Testimonials
+15/ Blog
+16/ Contact
+17/ Customer Retention
+18/ Stats
+19/ Delivery
+20/ FAQ
+21/ Pricing
+22/ Portfolio
+23/ Brand
+24/ Latest Project 
+25/ How It Work
+26/ Footer
+
+====================================
+**/
+
+/*------------------------------------
+	Google Fonts
+------------------------------------*/
+@import "base/fonts";
+
+/*------------------------------------
+	01/ Variables
+------------------------------------*/
+@import "abstracts/variables";
+
+/*------------------------------------
+	02/ Mixins
+------------------------------------*/
+@import "abstracts/mixins";
+
+/*------------------------------------
+	04/ Common
+------------------------------------*/
+@import "base/common";
+
+/*------------------------------------
+	05/ Keyframes
+------------------------------------*/
+@import "base/keyframes";
+
+/*------------------------------------
+	06/ Header
+------------------------------------*/
+@import "header/header";
+
+/*------------------------------------
+	07/ Hero
+------------------------------------*/
+@import "hero/hero";
+
+/*------------------------------------
+	08/ About
+------------------------------------*/
+@import "about/about";
+
+/*------------------------------------
+	09/ Services
+------------------------------------*/
+@import "services/services";
+
+
+/*------------------------------------
+	10/ Projects
+------------------------------------*/
+@import "projects/projects";
+
+/*------------------------------------
+	11/ Working Process
+------------------------------------*/
+@import "working-process/working-process";
+
+/*------------------------------------
+	12/ Team 
+------------------------------------*/
+@import "team/team";
+
+/*------------------------------------
+	13/ Choose Us 
+------------------------------------*/
+@import "choose-us/choose-us";
+
+/*------------------------------------
+	14/ Testimonials 
+------------------------------------*/
+@import "testimonials/testimonials";
+
+/*------------------------------------
+	15/ Blog 
+------------------------------------*/
+@import "blog/blog";
+
+/*------------------------------------
+	16/ Contact 
+------------------------------------*/
+@import "contact/contact";
+
+/*------------------------------------
+	17/ Customer Retention 
+------------------------------------*/
+@import "customer-retention/customer-retention";
+
+/*------------------------------------
+	18/ Stats
+------------------------------------*/
+@import "stats/stats";
+
+/*------------------------------------
+	19/ Delivery 
+------------------------------------*/
+@import "delivery/delivery";
+
+/*------------------------------------
+	20/ FAQ 
+------------------------------------*/
+@import "faq/faq";
+
+/*------------------------------------
+	21/ Pricing 
+------------------------------------*/
+@import "pricing/pricing";
+
+/*------------------------------------
+	22/ Portfolio 
+------------------------------------*/
+@import "portfolio/portfolio";
+
+/*------------------------------------
+	23/ Brand 
+------------------------------------*/
+@import "brand/brand";
+
+/*------------------------------------
+	24/ Latest Project 
+------------------------------------*/
+@import "latest-project/latest-project";
+
+/*------------------------------------
+	25/ How It Work 
+------------------------------------*/
+@import "how-it-work/how-it-work";
+
+/*------------------------------------
+	26/ Footer 
+------------------------------------*/
+@import "footer/footer";

@@ -1,0 +1,76 @@
+.zirox {
+    &-how-it-work {
+        h2 {
+            max-width: 600px;
+            margin-inline: auto;
+            margin-bottom: 130px;
+        }
+        &-item {
+            padding: 0 30px 34px 30px;
+            border: 1px solid #e8e7e7;
+            background-color: #fff;
+            transition: all 0.4s ease-in-out;
+            @media #{$tab_device} {
+                margin-bottom: 100px;
+            }
+            @media #{$small_mobile} {
+                margin-bottom: 100px;
+                padding: 0 20px 20px 20px;
+            }
+            &:hover {
+                background-color: #f6f6f6;
+				.zirox-how-it-work-item-icon {
+					background-color: $primary-color;
+					border: 2px solid #ddd;
+					i {
+						color: $white-color;
+						// transform: rotate(360deg);
+					}
+				}
+            }
+            &-img {
+                margin-top: -72px;
+                @media #{$lg_device} {
+                    margin-top: -48px;
+                }
+                @media #{$tab_device} {
+                    margin-top: -57px;
+                }
+                @media #{$small_mobile} {
+                    margin-top: -57px;
+                }
+                img {
+                    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='306px' height='241px'%3E%3Cpath fill-rule='evenodd' fill='rgb(28, 27, 31)' d='M37.003,-0.002 L37.003,61.998 L0.003,61.998 '/%3E%3Cpath fill-rule='evenodd' fill='rgb(28, 27, 31)' d='M306.003,240.1000 L261.981,0.999 L36.003,0.999 L36.003,240.1000 L306.003,240.1000 Z'/%3E%3C/svg%3E");
+                    mask-size: cover;
+                }
+            }
+            &-icon {
+                width: 90px;
+                height: 90px;
+                border-radius: 100%;
+                border: 1px solid #e8e7e7;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                margin-top: -45px;
+                margin-bottom: 30px;
+                margin-inline: auto;
+                position: relative;
+                z-index: 1;
+				transition: all 0.4s ease-in-out;
+                i {
+                    font-size: 34px;
+					transition: all 0.4s ease-in-out;
+                }
+            }
+            h6 {
+                line-height: 20px;
+            }
+            h3 {
+                line-height: 20px;
+                margin: 22px 0;
+            }
+        }
+    }
+}

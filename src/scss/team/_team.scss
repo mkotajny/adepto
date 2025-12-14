@@ -1,0 +1,100 @@
+.zirox {
+    &-team {
+        h2 {
+            max-width: 600px;
+            margin-inline: auto;
+            margin-bottom: 50px;
+        }
+        &-item {
+            position: relative;
+            margin-bottom: 30px;
+			overflow: hidden;
+            img {
+                width: 100%;
+                height: auto;
+				transform: scale(1);
+				transition: all 0.4s ease-in-out;
+            }
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+            &__info {
+                position: absolute;
+                background-color: $primary-color;
+                padding: 30px 0;
+                width: 90%;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: all 0.4s ease-in-out;
+                opacity: 0;
+				visibility: hidden;
+				box-shadow: 0px 0px 5px 0px rgba(38, 38, 56, 0.07);
+                p {
+                    color: #e7dddd;
+                }
+                &__socials {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    li {
+                        a {
+                            background-color: #ffff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 100%;
+                            width: 38px;
+                            height: 38px;
+                            i {
+                                font-size: 20px;
+                                line-height: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover {
+                .zirox-team-item__info {
+                    opacity: 1;
+					visibility: visible;
+                }
+            }
+        }
+        &--home-2 {
+            
+            .zirox-team-item {
+                overflow: unset;
+                @media #{$tab_device} {
+                        overflow: hidden;
+                    }
+                    @media #{$small_mobile} {
+                        overflow: hidden;
+                    }
+                &__info {
+                    width: 80%;
+                    box-shadow: 0px 4px 20px 0px rgba(4, 9, 66, 0.05);
+                    background-color: #fff;
+                    bottom: -62px;
+                    @media #{$tab_device} {
+                        bottom: 0;
+                    }
+                    @media #{$small_mobile} {
+                        bottom: 0;
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #878c8f;
+                    }
+                    h3 {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.zirox {
+    &-faq {
+        &__right {
+            @media #{$tab_device} {
+                margin-top: 50px;
+            }
+            @media #{$small_mobile} {
+                margin-top: 40px;
+            }
+            .accordion {
+                &-item {
+                    border: none !important;
+                    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+                }
+                &-button {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    padding: 30px 40px;
+                    text-transform: capitalize;
+                    @media #{$small_mobile} {
+                        padding:15px 10px;
+                        font-size: 14px;
+                    }
+                    &:focus {
+                        border: none;
+                        box-shadow: unset;
+                    }
+                    &:not(.collapsed) {
+                        background-color: $home-3-primary-color;
+                        color:#fff;
+                    }
+                    &::after {
+                        content: none;
+                    }
+                    i {
+                        color: #fff;
+                        margin-right: 20px;
+                        font-size: 20px;
+                    }
+                    .open {
+                        display: none;
+                    }
+                    .close {
+                        display: block;
+                    }
+                }
+                .collapsed {
+                    i {
+                        color: $home-3-primary-color;
+                    }
+                    .open {
+                        display: block;
+                    }
+                    .close {
+                        display: none;
+                    }
+                }
+                &-header {
+                    margin-bottom: 20px;
+                    @media #{$small_mobile} {
+                        margin-bottom: 10px;
+                    }
+                }
+                &-body {
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    color: #878c8f;
+                    line-height: 24px;
+                    @media #{$small_mobile} {
+                        font-size: 14px;
+                        padding-top: 0;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,280 @@
+/*-----------------
+    Main Menu
+-------------------*/
+.ud-main-menu {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        > li {
+            display: inline-block;
+            transition: all 0.3s ease-in-out;
+            > a {
+                display: block;
+                font-size: 16px;
+                line-height: 1;
+                text-transform: capitalize;
+                padding: 21px 10px;
+                text-decoration: none;
+                color: #333;
+                transition: all 0.3s ease-in-out;
+				i {
+					vertical-align: middle;
+                    font-size: 12px;
+                    margin-left: 5px;
+				}
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+            position: relative;
+            &:hover {
+                > ul {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+            }
+            > ul {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+                transform: translateY(50px);
+                width: 250px;
+                background-color: #fff;
+                // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				z-index: 9999;
+                li {
+                    display: block;
+                    a {
+                        padding: 15px;
+                        &:hover {
+                            background-color: #eee;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+	&--home-1 {
+		ul > li > a {
+			padding: 21px 20px;
+		}
+	}
+
+	&--home-2 {
+		ul > li > a {
+			padding: 21px 10px;
+            
+			@media #{$ls} {
+				padding: 21px 20px;
+			}
+            @media #{$desktop_m} {
+				padding: 18px 10px !important;
+			}
+			@media (min-width: 1400px) and (max-width: 1599px) {
+				padding: 18px 10px !important;
+			}
+		}
+	}
+
+	&--home-3 {
+		ul {
+			gap: 7px;
+			> li > a {
+				padding: 21px 20px;
+				@media #{$ls} {
+					padding: 21px 20px;
+				}
+				@media #{$desktop_m} {
+					padding: 18px 10px !important;
+				}
+				@media (min-width: 1400px) and (max-width: 1599px) {
+					padding: 18px 10px !important;
+				}
+			}
+		}
+	}
+}
+.zirox-header {
+	&__navbar {
+		background-color: #fff;
+		z-index: 11;
+		line-height: 1.5;
+		// @media #{$small_mobile} {
+		// 	display: none;
+		// }
+		// @media #{$tab_device} {
+		// 	display: none;
+		// }
+		&__btns {
+			display: flex;
+			align-items: center;
+			gap: 50px;
+			position: relative;
+
+			&--home-2 {
+				gap: 40px;
+				@media #{$ls} {
+					gap: 50px;
+				}
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				height: 70%;
+				width: 2px;
+				background-color: #878C8F;
+				top: 50%;
+				transform: translateY(-50%);
+				bottom: 0;
+				left: 55px;
+			}
+			&-search {
+				padding: 10px;
+				background: transparent;
+				i {
+					color: #000;
+				}
+			}
+		}
+        &--home-2 {
+            background-color: rgba(28, 27, 31, 0.4);
+            padding: 24px 0;
+            position: relative;
+            z-index: 1;
+            .container-fluid {
+                width: 90%;
+				@media #{$ls} {
+					width: 85%;
+				}
+                @media #{$small_mobile} {
+                    width: 100%;
+                }
+            }
+            .ud-main-menu {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+				@media #{$ls} {
+					gap: 70px;
+				}
+                ul {
+                    li {
+                        a {
+                            color: #fff;
+                            transition: all ease-in-out 0.4s;
+                            &:hover {
+                                color: $primary-color;
+                            }
+                            i {
+                                font-size: 12px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+                &__sub-menu {
+                    background-color: $light-black-color;
+                    li {
+                        a {
+                            &:hover {
+                                background-color: rgba(28, 27, 31, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
+            .zirox-hamburger-menu {
+                display: inline-flex;
+                
+                .zirox-hamburger-menu__btn {
+                    &--active {
+                        span {
+                            transform: rotate(45deg);
+                            &::before {
+                                top: 0;
+                                transform: rotate(0);
+                            }
+                            &::after {
+                                top: 0;
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+                }
+                &__btn {
+                    display: flex;
+                    align-items: center;
+                    width: 26px;
+                    height: 26px;
+                    position: relative;
+                    cursor: pointer;
+                    span {
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        background-color: $primary-color;
+                        transition: all 0.3s ease-in-out;
+                        &::before, &::after {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            height: 3px;
+                            background-color: $primary-color;
+                            transition: all 0.3s ease-in-out;
+                        }
+                        &::before {
+                            top: -8px;
+                        }
+                        &::after {
+                            top: 8px;
+                        }
+                    }
+
+                }
+            }
+            .zirox-header__navbar__btns-search {
+                i {
+                    color: #5c5e61;
+                    font-size: 24px;
+                }
+            }
+            .zirox-header__navbar-socials {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                @media #{$small_mobile} {
+                    margin-bottom: 20px;
+                }
+                li {
+                    a {
+                        cursor: pointer;
+                        background-color: #4a4a4d;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        color: #f4f4f4;
+                        border-radius: 100%;
+                        transition: all ease-in-out 0.4s;
+                        &:hover {
+                            background-color: $primary-color;
+                        }
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+	}
+}

@@ -1,0 +1,742 @@
+/**------------------
+	HERO
+-------------------*/
+.zirox {
+	&-hero {
+		&-section {
+			margin-top: -60px;
+			position: relative;
+			overflow: hidden;
+			@media #{$small_mobile} {
+				margin-top: 0;
+			}
+			@media #{$tab_device} {
+				margin-top: 0;
+			}
+
+			// Home 3.
+			&--home-3 {
+				margin-top: 0;
+				.container-fluid {
+					width: 90%;
+					@media #{$small_mobile} {
+						width: 100%;
+					}
+				}
+				.zirox {
+					&-hero {
+						background: url(../img/home-3/hero/hero-bg.png) no-repeat;
+						background-position: center center;
+						background-size: cover;
+						padding: 100px 0;
+						@media #{$desktop_m} {
+							padding: 76px 0;
+						}
+						
+						@media #{$tab_device} {
+							padding: 70px 0;
+						}
+						@media #{$small_mobile} {
+							padding: 50px 0;
+						}
+						&__slider {
+							&__dots {
+								right: 3%;
+								left: auto;
+								@media #{$tab_device} {
+									right: 2%;
+								}
+								@media #{$small_mobile} {
+									right: unset;
+									left: 50%;
+									top: 100%;
+									bottom: -35px;
+									transform: translate(-50%, -100%);
+								}
+								ul {
+									@media #{$small_mobile} {
+										flex-direction: row;
+									}
+									li {
+										border: 2px solid transparent;
+										&.slick-active {
+											border: 2px solid $home-3-primary-color;
+											button {
+												border: 1px solid $home-3-primary-color;
+												padding: 3px;
+												height: 7px;
+												width: 7px;
+											}
+										}
+										button {
+											border: 2px solid $home-3-primary-color;
+											background-color: $home-3-primary-color;
+										}
+									}
+								}
+							}
+							&__item {}
+						}
+						&__left {
+							background-color: $home-3-primary-color;
+							padding: 100px 50px;
+							position: relative;
+							z-index: 99;
+							@media #{$big_s} {
+								margin-left: 150px;
+							}
+							@media #{$ls} {
+								padding: 100px 140px;
+							}
+							@media #{$lg_device} {
+								padding: 58px 44px;
+							}
+							@media #{$tab_device} {
+								background-color: #07847fd9;
+								padding: 70px 20px;
+							}
+							@media #{$small_mobile} {
+								background-color: #07847fd9;
+								padding: 50px 0;
+							}
+							&::before, &::after {
+								content: unset;
+							}
+							h1 {
+								line-height: 1.111;
+								font-weight: 700;
+								@media #{$desktop_m} {
+									font-size: 80px;
+									margin-bottom: 20px;
+								}
+								@media #{$lg_device} {
+									font-size: 56px;
+								}
+								@media #{$tab_device} {
+									font-size: 89px;
+								}
+								@media #{$small_mobile} {
+									font-size: 28px;
+									margin-bottom: 20px;
+								}
+							}
+							p {
+								margin-bottom: 50px;
+								font-size: 23px;
+								line-height: 25px;
+								font-weight: 600;
+								@media #{$lg_device} {
+									margin-bottom: 24px;
+								}
+								@media #{$small_mobile} {
+									font-size: 14px;
+									margin-bottom: 30px;
+									text-align: center;
+								}
+							}
+							&__content__top {
+								color: $white-color;
+								display: inline-flex;
+								align-items: center;
+								justify-content: center;
+								margin-bottom: 30px;
+								gap: 10px;
+								@media #{$small_mobile} {
+									margin-bottom: 20px;
+								}
+								span {
+									color: $white-color;
+									font-size: 25px;
+									line-height: 18px;
+									font-weight: 500;
+									position: relative;
+									border-right: 2.5px solid $white-color;
+									padding-right: 10px;
+									&:last-child {
+										border-right: none;
+									}
+									@media #{$small_mobile} {
+										font-size: 14px;
+									}
+								}
+							}
+						}
+						&__right {
+							clip-path: none;
+							left: -270px;
+							top: -100px;
+							bottom: auto;
+							@media #{$ls} {
+								left: -214px;
+							}
+							@media #{$tab_device} {
+								left: -132px;
+								top: -777px;
+								right: -52px;
+								bottom: auto;
+							}
+							@media #{$small_mobile} {
+								left: -132px;
+								top: -430px;
+								right: -30px;
+								bottom: auto;
+							}
+							&::before {
+								content: "";
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								z-index: 1;
+								background: linear-gradient(286deg, rgba(255, 255, 255, 0) 0%, white 153%); // @TODO: Need to check again.
+							}
+							img {
+								// height: 600px;
+							}
+							&::after {
+								content: unset;
+							}
+						}
+					}
+				}
+				
+			}
+			&--home-2 {
+				margin-top: -250px;
+				@media #{$ls} {
+					margin-top: -194px;
+				}
+				@media (min-width: 1400px) and (max-width: 1599px) {
+					margin-top: -304px;
+				}
+				position: relative;
+				.home-2-hero-slider {
+					padding-top: 140px;
+					@media #{$ls} {
+						padding-top: 65px;
+					}
+				}
+				.zirox-hero-section__vectors {
+					img {
+						position: absolute;
+					}
+					&-left {
+						left: 0;
+						bottom: 0;
+						z-index: 2;
+						@media #{$small_mobile} {
+							width: 130px;
+						}
+					}
+					&-right {
+						top:304px;
+						right: 0;
+						z-index: 1;
+						@media #{$lg_device} {
+							top: 250px;
+						}
+						@media #{$tab_device} {
+							top: 260px;
+						}
+						@media #{$small_mobile} {
+							top: 370px;
+							width: 260px;
+						}
+					}
+				}
+				.container-fluid {
+					width: 95%;
+					@media #{$ls} {
+						width: 90%;
+					}
+					@media #{$small_mobile} {
+						width: 100%;
+						padding: 0;
+					}
+					@media #{$big_s} {
+						width: 95%;
+					}
+					&::before,
+					&::after {
+						content: "";
+						position: absolute;
+						height: 100%;
+						width: 76px;
+						top: 0;
+						bottom: 0;
+						z-index: 1;
+						@media #{$ls} {
+							width: 110px;
+						}
+						@media #{$small_mobile} {
+							content: none;
+						}
+					}
+					&::before {
+						left: 0;
+						background-color: #1c1b1f;
+					}
+					&::after {
+						right: 0;
+						background-color: $primary-color;
+					}
+				}
+				.zirox-hero {
+					&__slider-item {
+						background-image: url('../img/home-2/home-2-hero-bg.png');
+						background-size: cover;
+						position: relative;
+						padding: 178px 0;
+						@media #{$ls} {
+							padding: 244px 0;
+						}
+						&::after {
+							content: "";
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: 0;
+							background-color: rgba(0,0,0, 0.8);
+						}
+					}
+					&__content {
+						position: relative;
+						z-index: 1;
+						@media #{$desktop_m} {
+							margin-left: 100px;
+						}
+						@media #{$tab_device} {
+							margin: 0;
+							padding: 0 50px;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							text-align: center;
+						}
+						@media #{$small_mobile} {
+							margin-left: 0;
+							text-align: center;
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							gap: 40px;
+						}
+						h1 {
+							margin-bottom: 30px;
+							// @media #{$tab_device} {
+							// 	margin-bottom: 30px;
+							// }
+						}
+						a {
+							&:hover {
+								background-color: #fff;
+								color: $primary-color;
+							}
+						}
+						&-popup {
+							position: absolute;
+							left: 40%;
+							top: 85%;
+							@media #{$tab_device} {
+								top: auto;
+								bottom: -50px;
+								left: 45%;
+							}
+							@media #{$small_mobile} {
+								left: 42%;
+								top: auto;
+								bottom: -45px;
+							}
+							&-video {
+								width: 74px;
+								height: 74px;
+								border-radius: 100%;
+								background-color: #fff;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								cursor: pointer;
+								position: absolute;
+								top:0;
+								left: 0;
+								z-index: 1;
+								i {
+									color: $primary-color;
+								}
+							}
+							svg {
+								width: 200px;
+								height: 200px;
+								position: absolute;
+								top:-63px;
+								left: -63px;
+								animation: rotate-animation 10s infinite linear;
+								text {
+									font-size: 33px;
+									font-family: Helvetica Neue, sans-serif;
+									font-weight: 500;
+									text-transform: uppercase;
+									letter-spacing: 21px;
+									fill: #fff;
+								}
+							}
+						}
+					}
+				}
+				.zirox-hero-section__time {
+					display: flex;
+					align-items: center;
+					gap: 40px;
+					position: absolute;
+					top: 50%;
+					transform: translateX(50%);
+					transform: rotate(270deg);
+					z-index: 3;
+					left: -125px;
+					@media #{$ls} {
+						left: -110px;
+					}
+					@media #{$lg_device} {
+						top: 60%;
+					}
+					@media #{$tab_device} {
+						top: 65%;
+					}
+					@media #{$small_mobile} {
+						display: none;
+					}
+					li {
+						display: flex;
+						align-items: center;
+						gap: 20px;
+						i {
+							color: #fff;
+						}
+						p {
+							color: #fff;
+							text-transform: uppercase;
+						}
+					}
+				}
+				.zirox-hero-section__slider-btn {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 15px;
+					z-index: 2;
+					@media #{$ls} {
+						right: 30px;
+					}
+					@media #{$small_mobile} {
+						display: none;
+					}
+					button {
+						width: 50px;
+						height: 50px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background: transparent;
+						border: 1px solid #000;
+						border-radius: 100%;
+						transition: all 0.3s ease-in-out;
+						cursor: pointer;
+						i {
+							color: #000;
+							transition: all 0.3s ease-in-out;
+						}
+						&:hover {
+							border-color: #fff;
+							i {
+								color: #fff;
+							}
+						}
+					}
+				}
+				.zirox-hero-section__service {
+					position: relative;
+					padding: 35px 0 25px 0;
+					@media #{$small_mobile} {
+						padding: 20px 0 10px 0;
+					}
+					&::before {
+						content: "";
+						position: absolute;
+						width: 50%;
+						height: 100%;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						background-color: #1c1b1f;
+					}
+					&::after {
+						content: "";
+						position: absolute;
+						width: 50%;
+						height: 100%;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						background-color: $primary-color;
+					}
+					ul {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						position: relative;
+						z-index: 1;
+						@media #{$small_mobile} {
+							gap: 20px;
+						}
+						li {
+							display: inline-flex;
+							align-items: flex-start;
+							justify-content: flex-start;
+							gap: 25px;
+							color: #fff;
+							
+							@media #{$tab_device} {
+								gap: 10px;
+							}
+							@media #{$small_mobile} {
+								gap: 10px;
+							}
+							p, h3 {
+								color: #fff;
+								font-family: "Lora", serif;
+								font-weight: 500;
+								line-height: 1;							  
+							}
+							p {
+								font-size: 60px;
+								@media #{$lg_device} {
+									font-size: 50px;
+								}
+								@media #{$tab_device} {
+									font-size: 40px;
+								}
+								@media #{$small_mobile} {
+									font-size: 27px;
+								}
+							}
+							h3 {
+								font-size: 45px;
+								@media #{$lg_device} {
+									font-size: 35px;
+								}
+								@media #{$tab_device} {
+									font-size: 28px;
+								}
+								@media #{$small_mobile} {
+									font-size: 18px;
+								}
+							}
+						}
+					}
+				}
+			}
+			&--single {
+				padding: 270px 0 210px 0;
+				@media #{$small_mobile} {
+					padding: 100px 0;
+				}
+				@media #{$tab_device} {
+					padding: 150px 0;
+				}
+				background: url(../img/home-1/hero-left.png) no-repeat center center /
+			cover;
+
+				.zirox-hero__left {
+					&::after {
+						content: "";
+						background: url(../img/home-1/hero-left-overlay.png) no-repeat;
+						background-position: initial;
+						background-size: contain;
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						transform: rotate(357deg);
+						@media #{$lg_device} {
+							top: unset;
+							left: -150px;
+							bottom: -80px;
+						}
+						@media #{$tab_device} {
+							top: unset;
+							left: -64px;
+							bottom: -5px;
+						}
+						@media #{$small_mobile} {
+							top: unset;
+							left: -37px;
+							bottom: -140px;
+						}
+					}
+				}
+			}
+		}
+		background: url(../img/home-1/hero-left.png) no-repeat center center /
+			cover;
+		padding: 200px 0;
+		@media #{$small_mobile} {
+			padding: 100px 0;
+			background: none;
+		}
+		@media #{$tab_device} {
+			padding: 150px 0;
+			background: none;
+		}
+		&__slider {
+			&__dots {
+				position: absolute;
+				left: 3%;
+				top: 50%;
+				z-index: 11;
+				transform: translate(-3%, -50%);
+				ul {
+					display: inline-flex !important;
+					flex-direction: column;
+					gap: 10px;
+					li {
+						border: 2px solid transparent;
+						padding: 8px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						height: 15px;
+						width: 15px;
+						border-radius: 100%;
+						&.slick-active {
+							border: 2px solid #fff;
+							button {
+								border: 1px solid #fff;
+							}
+						}
+						button {
+							text-indent: -999999999px;
+							border: 2px solid #fff;
+							border-radius: 100%;
+							height: 10px;
+							width: 10px;
+							background-color: transparent;
+							padding: 4px;
+						}
+					}
+				}
+			}
+		}
+		&__left {
+			@media #{$tab_device} {
+				width: 100%;
+			}
+			@media #{$small_mobile} {
+				width: 100%;
+			}
+			&::before {
+				content: "";
+				background: rgba($color: #000000, $alpha: 0.8);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			&::after {
+				@media #{$desktop} {
+					content: "";
+					background: url(../img/home-1/hero-left-overlay.png)
+						no-repeat;
+					background-position: initial;
+					background-size: contain;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					transform: rotate(357deg);
+				}
+				@media #{$small_mobile} {
+				}
+				@media #{$tab_device} {
+				}
+			}
+			&__content {
+				position: relative;
+				z-index: 1;
+				@media #{$small_mobile} {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+				@media #{$tab_device} {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+				h1 {
+					margin-bottom: 35px;
+					@media #{$small_mobile} {
+						text-align: center;
+					}
+					@media #{$tab_device} {
+						text-align: center;
+					}
+				}
+			}
+		}
+		&__right {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			clip-path: polygon(0 0, 100% 0%, 100% 100%, 17% 100%);
+			@media #{$small_mobile} {
+				left: 0;
+				clip-path: none;
+			}
+			@media #{$tab_device} {
+				left: 0;
+				clip-path: none;
+			}
+			&::after {
+				content: "";
+				background: url(../img/home-1/hero-right-overlay.png) no-repeat
+					center center / contain;
+				position: absolute;
+				top: 0;
+				left: 55px;
+				width: 100%;
+				height: 100%;
+				@media #{$small_mobile} {
+					background: rgba($color: #000000, $alpha: 0.5);
+					left: 0;
+				}
+				@media #{$tab_device} {
+					background: rgba($color: #000000, $alpha: 0.5);
+					left: 0;
+				}
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				@media #{$small_mobile} {
+					object-fit: cover;
+				}
+				@media #{$tab_device} {
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
