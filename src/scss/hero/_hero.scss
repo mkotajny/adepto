@@ -92,11 +92,11 @@
 								padding: 58px 44px;
 							}
 							@media #{$tab_device} {
-								background-color: #07847fd9;
+								background-color: #07847f99;
 								padding: 70px 20px;
 							}
 							@media #{$small_mobile} {
-								background-color: #07847fd9;
+								background-color: #07847f99;
 								padding: 50px 0;
 							}
 							&::before, &::after {
@@ -550,7 +550,7 @@
 				@media #{$tab_device} {
 					padding: 150px 0;
 				}
-				background: url(../img/home-1/hero-left.png) no-repeat center center /
+				background: url(../img/home-1/hero-left.jpg) no-repeat center center /
 			cover;
 
 				.zirox-hero__left {
