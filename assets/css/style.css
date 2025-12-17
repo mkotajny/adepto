@@ -1948,7 +1948,7 @@ body.home-1 .zirox-pre-loader .loading span::after {
 	HERO
 -------------------*/
 .zirox-hero {
-  background: url(../img/home-1/hero-left.png) no-repeat center center/cover;
+  background: url(../img/home-1/hero-left.jpg) no-repeat center center/cover;
   padding: 200px 0;
 }
 .zirox-hero-section {
@@ -2619,7 +2619,7 @@ body.home-1 .zirox-pre-loader .loading span::after {
 }
 .zirox-hero-section--single {
   padding: 270px 0 210px 0;
-  background: url(../img/home-1/hero-left.png) no-repeat center center/cover;
+  background: url(../img/home-1/hero-left.jpg) no-repeat center center/cover;
 }
 @media (max-width: 767px) {
   .zirox-hero-section--single {
