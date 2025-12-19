@@ -4257,10 +4257,25 @@ body.home-1 .zirox-pre-loader .loading span::after {
 	11/ Working Process
 ------------------------------------*/
 .zirox-working-process {
-  background-image: url("../img/working-process/working-process-bg.png");
+  background-image: url("../img/working-process/working-process-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+.zirox-working-process::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+.zirox-working-process > * {
+  position: relative;
+  z-index: 1;
 }
 .zirox-working-process h2 {
   max-width: 600px;
@@ -7194,11 +7209,26 @@ body.home-1 .zirox-pre-loader .loading span::after {
 	17/ Customer Retention 
 ------------------------------------*/
 .zirox-customer-retention {
-  background-image: url("../img/customer-retention/customer-retention.png");
+  background-image: url("../img/customer-retention/customer-retention.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0;
+  position: relative;
+}
+.zirox-customer-retention::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+.zirox-customer-retention > * {
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .zirox-customer-retention {
