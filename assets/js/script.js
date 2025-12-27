@@ -32,6 +32,9 @@ Table of Contents
 (function ($) {
 	("use strict");
 
+	// Save the timestamp when the script starts loading
+	const pageLoadStartTime = Date.now();
+
 	// Animation on Scroll.
 	function scrollAnimation() {
 		const shouldAnimate = $("body").data("scroll-animation");
@@ -41,9 +44,22 @@ Table of Contents
 	}
 	scrollAnimation();
 
-	// Preloader
+	// Preloader - shows for minimum 10 seconds on first load
 	$(window).on("load", function () {
-		$(".zirox-pre-loader").fadeOut(500);
+		const currentTime = Date.now();
+		const elapsedTime = currentTime - pageLoadStartTime;
+		const minDisplayTime = 0; // in miliseconds (1000 = 1 second)
+		
+		if (elapsedTime < minDisplayTime) {
+			// Wait for the remaining time to reach 10 seconds
+			const remainingTime = minDisplayTime - elapsedTime;
+			setTimeout(function() {
+				$(".zirox-pre-loader").fadeOut(500);
+			}, remainingTime);
+		} else {
+			// More than 10 seconds have passed, hide immediately
+			$(".zirox-pre-loader").fadeOut(500);
+		}
 	});
 
 	// Sticky Header.
