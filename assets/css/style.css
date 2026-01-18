@@ -1153,6 +1153,9 @@ body.home-1 .zirox-pre-loader .loading span::after {
   line-height: 20px;
   margin-top: 5px;
 }
+.zirox-header__top-bar__info .zirox-header-info-box h4 a {
+  text-transform: none;
+}
 .zirox-header__top-bar__right {
   display: -ms-flexbox;
   display: flex;
@@ -1865,6 +1868,9 @@ body.home-1 .zirox-pre-loader .loading span::after {
 .zirox-side-popup__bottom-info-box i {
   font-size: 40px;
   color: #DA242B;
+}
+.zirox-side-popup__bottom-info-box h4 a {
+  text-transform: none;
 }
 .zirox-side-popup__bottom-socials {
   display: -ms-flexbox;
