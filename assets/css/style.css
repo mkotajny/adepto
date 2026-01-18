@@ -7035,9 +7035,9 @@ body.home-1 .zirox-pre-loader .loading span::after {
 ------------------------------------*/
 .zirox-contact {
   background-color: #1c1b1f;
-  padding-top: 487px;
+  padding-top: 120px;
   padding-bottom: 50px;
-  margin-top: -432px;
+  margin-top: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .zirox-contact {
