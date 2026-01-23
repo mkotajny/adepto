@@ -8629,6 +8629,7 @@ body.home-1 .zirox-pre-loader .loading span::after {
   background-color: #1C1C1E;
   position: relative;
   padding-bottom: 0;
+  /* padding: -200px; */
 }
 .zirox-footer::after {
   content: "";
@@ -9099,4 +9100,61 @@ body.home-1 .zirox-pre-loader .loading span::after {
   font-weight: 400;
   color: #fff;
   text-align: center;
+}
+
+/* === Adepto: Footer Partners Section === */
+.zirox-footer__partners {
+  text-align: left;
+  /* margin-top: 32px; */
+}
+
+.zirox-footer__partners h5 {
+  color: #f4f4f48c;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.zirox-footer__partners-logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 24px; */
+}
+
+/* Partners logos row - responsive flex wrap */
+.zirox-footer__partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.zirox-footer__partners-logos img {
+  max-height: 90px;
+  max-width: 200px;
+  background: #f4f4f48c;
+  border-radius: 12px;
+  padding: 4px;
+  box-shadow: 0 2px 12px #0002;
+}
+@media (max-width: 575.98px) {
+  .zirox-footer__partners {
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+  .zirox-footer__partners h5 {
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+  .zirox-footer__partners-logos {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+  .zirox-footer__partners-logos img {
+    width: 100%;
+    height: auto;
+  }
 }
