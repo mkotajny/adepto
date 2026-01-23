@@ -4369,8 +4369,8 @@ body.home-1 .zirox-pre-loader .loading span::after {
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
   transition: all 0.4s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   box-shadow: 0px 0px 5px 0px rgba(38, 38, 56, 0.07);
 }
 .zirox-team-item__info p {
@@ -4400,10 +4400,6 @@ body.home-1 .zirox-pre-loader .loading span::after {
 .zirox-team-item__info__socials li a i {
   font-size: 20px;
   line-height: 0;
-}
-.zirox-team-item:hover .zirox-team-item__info {
-  opacity: 1;
-  visibility: visible;
 }
 .zirox-team--home-2 .zirox-team-item {
   overflow: unset;
