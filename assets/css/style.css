@@ -9158,3 +9158,58 @@ body.home-1 .zirox-pre-loader .loading span::after {
     height: auto;
   }
 }
+
+/* Confirmation Page Styles */
+.form-confirmation-bg {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url('../img/home-1/hero-right.jpg') center center/cover no-repeat;
+}
+.form-confirmation-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 1;
+}
+.form-confirmation-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', 'Poppins', Arial, Helvetica, sans-serif;
+  padding: 2rem 2.5rem;
+  border-radius: 18px;
+  background: rgba(30,30,40,0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.form-confirmation-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.form-confirmation-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.form-confirmation-content a {
+  color: #fff;
+  background: #ff7a00;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+  font-family: 'Montserrat', 'Poppins', Arial, Helvetica, sans-serif;
+}
+.form-confirmation-content a:hover {
+  background: #ff9900;
+}
