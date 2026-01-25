@@ -679,11 +679,8 @@
 							<h6>Skontaktuj się z nami</h6>
 							<h2 class="text-white">Bezpłatna Konsultacja</h2>
 							<div class="zirox-contact__left__form">
-								<form id="contact-form" name="contact-form" action="/form-submission-confirmation.html" netlify>
-									<input type="hidden" name="form-name" value="contact-form">
-									<!-- <p style="display:none">
-										<label>Nie wypełniaj tego pola: <input name="bot-field" /></label>
-									</p> -->
+								<form name="contact-form" method="POST" action="/form-submission-confirmation.html" data-netlify="true" netlify-honeypot="bot-field">
+									<input type="hidden" name="subject" value="contact form">
 									<div class="row">
 										<div class="col-12 col-md-6">
 											<input type="text" name="name" id="name" placeholder="Twoje Imię i Nazwisko" required>
@@ -694,8 +691,12 @@
 										<div class="col-12 col-md-6">
 											<input type="tel" name="phone" id="phone" placeholder="Twój Telefon" required>
 										</div>
+										<div class="mt-0">
+											<label for="comment" style="color:#878C8F; margin-bottom:16px; display:block;">komentarz (opcjonalnie)</label>
+											<textarea name="comment" id="comment" rows="3" placeholder="Wpisz dodatkowe informacje..." style="width:100%; border-radius:8px; border:1px solid #ccc; padding:0.5rem;"></textarea>
+										</div>
 									</div>
-									<button class="zirox-button" id="send-message" type="submit">Wyślij Wiadomość</button>
+									<button class="zirox-button mt-3" id="send-message" type="submit">Wyślij Wiadomość</button>
 								</form>
 							</div>
 						</div>
