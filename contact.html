@@ -372,22 +372,23 @@
 						<div class="col-12  col-lg-8">
 							<div class="zirox-contact__right">
 								<div class="zirox-contact__right-form">
-									<form action="/" method="POST" id="contact-form">
+									<form name="contact-form" method="POST" action="/form-submission-confirmation.html" data-netlify="true" netlify-honeypot="bot-field">
+										<input type="hidden" name="subject" value="register form">
 										<div class="row">
 											<div class="col-12 col-md-6">
-												<input type="text" name="fullname" id="fullname" placeholder="Imię i Nazwisko">
+												<input type="text" name="fullname" id="fullname" placeholder="Imię i Nazwisko" required>
 											</div>
 											<div class="col-12 col-md-6">
-												<input type="email" name="email" id="email" placeholder="Adres Email">
+												<input type="email" name="email" id="email" placeholder="Adres Email" required>
 											</div>
 											<div class="col-12 col-md-6">
-												<input type="text" name="phone" id="phone" placeholder="Telefon">
+												<input type="tel" name="phone" id="phone" placeholder="Twój Telefon" required pattern="^(\d{3} ?\d{3} ?\d{3})$" title="Wprowadź 9 cyfr, np. 123 456 789 lub 123456789">
 											</div>
 											<div class="col-12 col-md-6">
-												<input type="text" name="Subject" id="Subject" placeholder="Temat">
+												<input type="text" name="Subject" id="Subject" placeholder="Temat" required>
 											</div>
 											<div class="col-12">
-												<textarea name="message" id="message" cols="30" rows="10" placeholder="Twoja Wiadomość"></textarea>
+												<textarea name="message" id="message" cols="30" rows="10" placeholder="Twoja Wiadomość" required></textarea>
 											</div>
 										</div>
 										<button class="zirox-button">Wyślij Wiadomość</button>
