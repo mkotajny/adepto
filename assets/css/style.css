@@ -1383,25 +1383,6 @@ body.home-1 .zirox-pre-loader .loading span::after {
     gap: 50px;
   }
 }
-.zirox-header__navbar__btns::before {
-  content: "";
-  position: absolute;
-  height: 70%;
-  width: 2px;
-  background-color: #878C8F;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-  bottom: 0;
-  left: 55px;
-}
-.zirox-header__navbar__btns-search {
-  padding: 10px;
-  background: transparent;
-}
-.zirox-header__navbar__btns-search i {
-  color: #000;
-}
 .zirox-header__navbar--home-2 {
   background-color: rgba(28, 27, 31, 0.4);
   padding: 24px 0;
