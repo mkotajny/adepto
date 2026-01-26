@@ -677,7 +677,7 @@
 					<div class="col-12 col-md-7">
 						<div class="zirox-contact__left wow fadeInLeft" data-wow-duration="2s">
 							<h6>Skontaktuj się z nami</h6>
-							<h2 class="text-white">Bezpłatna Konsultacja</h2>
+							<h2 class="text-white">Zapisz się do Stowarzyszenia</h2>
 							<div class="zirox-contact__left__form">
 								<form name="contact-form" method="POST" action="/form-submission-confirmation.html" data-netlify="true" netlify-honeypot="bot-field">
 									<input type="hidden" name="subject" value="contact form">
@@ -689,7 +689,7 @@
 											<input type="email" name="email" id="email" placeholder="Twój Adres Email" required>
 										</div>
 										<div class="col-12 col-md-6">
-											<input type="tel" name="phone" id="phone" placeholder="Twój Telefon" required>
+											<input type="tel" name="phone" id="phone" placeholder="Twój Telefon" required pattern="^(\d{3} ?\d{3} ?\d{3})$" title="Wprowadź 9 cyfr, np. 123 456 789 lub 123456789">
 										</div>
 										<div class="mt-0">
 											<label for="comment" style="color:#878C8F; margin-bottom:16px; display:block;">komentarz (opcjonalnie)</label>
