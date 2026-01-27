@@ -1153,6 +1153,9 @@ body.home-1 .zirox-pre-loader .loading span::after {
   line-height: 20px;
   margin-top: 5px;
 }
+.zirox-header__top-bar__info .zirox-header-info-box h4 a {
+  text-transform: none;
+}
 .zirox-header__top-bar__right {
   display: -ms-flexbox;
   display: flex;
@@ -1379,25 +1382,6 @@ body.home-1 .zirox-pre-loader .loading span::after {
   .zirox-header__navbar__btns--home-2 {
     gap: 50px;
   }
-}
-.zirox-header__navbar__btns::before {
-  content: "";
-  position: absolute;
-  height: 70%;
-  width: 2px;
-  background-color: #878C8F;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-  bottom: 0;
-  left: 55px;
-}
-.zirox-header__navbar__btns-search {
-  padding: 10px;
-  background: transparent;
-}
-.zirox-header__navbar__btns-search i {
-  color: #000;
 }
 .zirox-header__navbar--home-2 {
   background-color: rgba(28, 27, 31, 0.4);
@@ -1865,6 +1849,9 @@ body.home-1 .zirox-pre-loader .loading span::after {
 .zirox-side-popup__bottom-info-box i {
   font-size: 40px;
   color: #DA242B;
+}
+.zirox-side-popup__bottom-info-box h4 a {
+  text-transform: none;
 }
 .zirox-side-popup__bottom-socials {
   display: -ms-flexbox;
@@ -4190,7 +4177,7 @@ body.home-1 .zirox-pre-loader .loading span::after {
 .zirox-services-details .zirox-services-details__right-box--support {
   text-align: center;
   padding: 90px 30px;
-  background-image: url("../img/services/services-detail-support-bg.png");
+  /* background-image: url("../img/services/services-detail-support-bg.png"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4356,15 +4343,15 @@ body.home-1 .zirox-pre-loader .loading span::after {
 .zirox-team-item__info {
   position: absolute;
   background-color: #DA242B;
-  padding: 30px 0;
-  width: 90%;
+  padding: 10px 0;
+  width: 70%;
   bottom: 0;
   left: 50%;
   -ms-transform: translateX(-50%);
       transform: translateX(-50%);
   transition: all 0.4s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   box-shadow: 0px 0px 5px 0px rgba(38, 38, 56, 0.07);
 }
 .zirox-team-item__info p {
@@ -4394,10 +4381,6 @@ body.home-1 .zirox-pre-loader .loading span::after {
 .zirox-team-item__info__socials li a i {
   font-size: 20px;
   line-height: 0;
-}
-.zirox-team-item:hover .zirox-team-item__info {
-  opacity: 1;
-  visibility: visible;
 }
 .zirox-team--home-2 .zirox-team-item {
   overflow: unset;
@@ -7035,9 +7018,9 @@ body.home-1 .zirox-pre-loader .loading span::after {
 ------------------------------------*/
 .zirox-contact {
   background-color: #1c1b1f;
-  padding-top: 487px;
+  padding-top: 120px;
   padding-bottom: 50px;
-  margin-top: -432px;
+  margin-top: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .zirox-contact {
@@ -8627,6 +8610,7 @@ body.home-1 .zirox-pre-loader .loading span::after {
   background-color: #1C1C1E;
   position: relative;
   padding-bottom: 0;
+  /* padding: -200px; */
 }
 .zirox-footer::after {
   content: "";
@@ -9097,4 +9081,116 @@ body.home-1 .zirox-pre-loader .loading span::after {
   font-weight: 400;
   color: #fff;
   text-align: center;
+}
+
+/* === Adepto: Footer Partners Section === */
+.zirox-footer__partners {
+  text-align: left;
+  /* margin-top: 32px; */
+}
+
+.zirox-footer__partners h5 {
+  color: #f4f4f48c;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.zirox-footer__partners-logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 24px; */
+}
+
+/* Partners logos row - responsive flex wrap */
+.zirox-footer__partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.zirox-footer__partners-logos img {
+  max-height: 90px;
+  max-width: 200px;
+  background: #f4f4f48c;
+  border-radius: 12px;
+  padding: 4px;
+  box-shadow: 0 2px 12px #0002;
+}
+@media (max-width: 575.98px) {
+  .zirox-footer__partners {
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+  .zirox-footer__partners h5 {
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+  .zirox-footer__partners-logos {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+  .zirox-footer__partners-logos img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Confirmation Page Styles */
+.form-confirmation-bg {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url('../img/home-1/hero-right.jpg') center center/cover no-repeat;
+}
+.form-confirmation-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 1;
+}
+.form-confirmation-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  font-family: 'Montserrat', 'Poppins', Arial, Helvetica, sans-serif;
+  padding: 2rem 2.5rem;
+  border-radius: 18px;
+  background: rgba(30,30,40,0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.form-confirmation-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.form-confirmation-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.form-confirmation-content a {
+  color: #fff;
+  background: #ff7a00;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+  font-family: 'Montserrat', 'Poppins', Arial, Helvetica, sans-serif;
+}
+.form-confirmation-content a:hover {
+  background: #ff9900;
 }
