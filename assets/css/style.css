@@ -1935,9 +1935,14 @@ body.home-1 .zirox-pre-loader .loading span::after {
 	HERO
 -------------------*/
 .zirox-hero {
-  background: url(../img/home-1/hero-left.jpg) no-repeat center center/cover;
+  background: url(../img/home-1/hero-left2.jpg) no-repeat center center/cover;
   padding: 200px 0;
 }
+.zirox-hero2 {
+  background: url(../img/home-1/hero-left3.jpg) no-repeat center center/cover;
+  padding: 200px 0;
+}
+
 .zirox-hero-section {
   margin-top: -60px;
   position: relative;

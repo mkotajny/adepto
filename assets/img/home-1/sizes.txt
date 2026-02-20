@@ -1,2 +1,0 @@
-hero-right: 962*701
-hero-left: 800*333
