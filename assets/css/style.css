@@ -1937,6 +1937,9 @@ body.home-1 .zirox-pre-loader .loading span::after {
 .zirox-hero {
   background: url(../img/home-1/hero-left2.jpg) no-repeat center center/cover;
   padding: 200px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .zirox-hero-section {
   margin-top: -60px;
