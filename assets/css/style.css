@@ -2713,11 +2713,15 @@ body.home-1 .zirox-pre-loader .loading span::after {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .zirox-hero__left {
     width: 100%;
+    position: relative;
+    z-index: 2;
   }
 }
 @media (max-width: 767px) {
   .zirox-hero__left {
     width: 100%;
+    position: relative;
+    z-index: 2;
   }
 }
 .zirox-hero__left::before {
@@ -2729,19 +2733,19 @@ body.home-1 .zirox-pre-loader .loading span::after {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 767px) {
+  .zirox-hero__left::before {
+    content: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .zirox-hero__left::before {
+    content: none;
+  }
+}
 @media (min-width: 1281px) {
   .zirox-hero__left::after {
-    content: "";
-    background: url(../img/home-1/hero-left-overlay.png) no-repeat;
-    background-position: initial;
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -ms-transform: rotate(357deg);
-        transform: rotate(357deg);
+    content: none;
   }
 }
 .zirox-hero__left__content {
@@ -2790,12 +2794,14 @@ body.home-1 .zirox-pre-loader .loading span::after {
   top: 0;
   bottom: 0;
   right: 0;
+  width: 64%;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 17% 100%);
           clip-path: polygon(0 0, 100% 0%, 100% 100%, 17% 100%);
 }
 @media (max-width: 767px) {
   .zirox-hero__right {
     left: 0;
+    width: 100%;
     -webkit-clip-path: none;
             clip-path: none;
   }
@@ -2803,16 +2809,17 @@ body.home-1 .zirox-pre-loader .loading span::after {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .zirox-hero__right {
     left: 0;
+    width: 100%;
     -webkit-clip-path: none;
             clip-path: none;
   }
 }
 .zirox-hero__right::after {
   content: "";
-  background: url(../img/home-1/hero-right-overlay.png) no-repeat center center/contain;
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
-  left: 55px;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -2831,6 +2838,7 @@ body.home-1 .zirox-pre-loader .loading span::after {
 .zirox-hero__right img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 @media (max-width: 767px) {
   .zirox-hero__right img {
