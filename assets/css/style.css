@@ -9205,3 +9205,26 @@ body.home-1 .zirox-pre-loader .loading span::after {
 .form-confirmation-content a:hover {
   background: #ff9900;
 }
+
+/* === Adepto: Footer Shop Link === */
+.zirox-footer__shop h5 {
+  color: #f4f4f48c;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+.zirox-footer__shop a {
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease-in-out;
+}
+.zirox-footer__shop a:hover {
+  color: #DA242B;
+}
+@media (max-width: 991px) {
+  .zirox-footer__shop {
+    margin-top: 40px;
+  }
+}
